@@ -13,7 +13,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout source code
+        uses: actions/checkout@v1
       - name: Setup NodeJs
         uses: actions/setup-node@v1
         with:
@@ -22,4 +23,4 @@ jobs:
         run: npm install
       - name: Run test
         run: npm test
-      - name: deploy
+      # - name: deploy
