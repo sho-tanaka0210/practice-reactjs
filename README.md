@@ -1,5 +1,7 @@
 # React.js練習用
 
+![deploy](https://github.com/Mizukichi0210/practice-reactjs/workflows/deploy/badge.svg?branch=master&event=push)
+
 トップにREADME.mdが存在する場合、GitHub pagesでの公開ができなかったため、  
 devleoperフォルダへ移動
 
