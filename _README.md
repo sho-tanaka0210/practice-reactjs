@@ -7,17 +7,25 @@
 $ docker build ./docker/. -t practice-reactjs
 
 # コンテナ起動方法
-$ docker run --rm -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/ash
+$ docker run --rm -v /Users/kichimiz/.ssh:/root/.ssh:ro -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/bash
+
+# サーバ起動方法
+$ npm start
 ```
 
 ## デプロイ方法
 
 ```bash
+# sshキーの設定
+$ eval `ssh-agent`
+$ ssh-add /root/.ssh/id_rsa
+
 # デプロイ
 $ npm run deploy
 
 # エラーが出た場合の対処法
 $ rm -rf node_modules/*
 $ npm install
+$ npm audit fix
 $ npm run deploy
 ```
