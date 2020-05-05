@@ -1,5 +1,8 @@
 # React.js練習用
 
+トップにREADME.mdが存在する場合、GitHub pagesでの公開ができなかったため、  
+devleoperフォルダへ移動
+
 ## 起動方法
 
 ```bash
