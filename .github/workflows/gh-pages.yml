@@ -2,11 +2,10 @@ name: deploy
 
 on:
   push:
-    paths-ignore:
-      paths:
-        - 'public/**'
-        - 'src/**'
-        - '**.json'
+    paths:
+      - 'public/**'
+      - 'src/**'
+      - '**.json'
     branches:
       - master
 
