@@ -3,14 +3,14 @@
 ![deploy](https://github.com/Mizukichi0210/practice-reactjs/workflows/deploy/badge.svg?branch=master&event=push)
 [![codecov](https://codecov.io/gh/Mizukichi0210/practice-reactjs/branch/master/graph/badge.svg)](https://codecov.io/gh/Mizukichi0210/practice-reactjs)
 
-トップにREADME.mdが存在する場合、GitHub pagesでの公開ができなかったため、  
-devleoperフォルダへ移動
+masterブランチへpush後にGitHub pagesにデプロイされる(将来的に予定)
 
 ## 起動方法
 
 ```bash
 # ビルド方法
-$ docker build ./docker/. -t practice-reactjs
+# /practice-reactjs 直下で行う
+$ docker/build_image.sh
 
 # コンテナ起動方法
 $ docker run --rm -v /Users/kichimiz/.ssh:/root/.ssh:ro -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/bash
@@ -22,6 +22,9 @@ $ npm start
 ## デプロイ方法
 
 ```bash
+# コンテナの起動
+$ docker run --rm -v /Users/kichimiz/.ssh:/root/.ssh:ro -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/bash
+
 # sshキーの設定
 $ eval `ssh-agent`
 $ ssh-add /root/.ssh/id_rsa
@@ -29,7 +32,7 @@ $ ssh-add /root/.ssh/id_rsa
 # デプロイ
 $ npm run deploy
 
-# エラーが出た場合の対処法
+# デプロイ時にエラーが出た場合の対処法
 $ rm -rf node_modules/*
 $ npm install
 $ npm audit fix
