@@ -2,12 +2,12 @@ name: deploy
 
 on:
   push:
+    branches:
+      - master
     paths:
       - 'public/**'
       - 'src/**'
       - '**.json'
-    branches:
-      - master
 
 jobs:
   deploy:
