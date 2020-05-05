@@ -3,7 +3,7 @@
 ![deploy](https://github.com/Mizukichi0210/practice-reactjs/workflows/deploy/badge.svg?branch=master&event=push)
 [![codecov](https://codecov.io/gh/Mizukichi0210/practice-reactjs/branch/master/graph/badge.svg)](https://codecov.io/gh/Mizukichi0210/practice-reactjs)
 
-masterブランチへpush後にGitHub pagesにデプロイされる(将来的に予定)
+masterブランチへpush後にGitHub pagesにデプロイされる
 
 ## 起動方法
 
@@ -20,6 +20,10 @@ $ npm start
 ```
 
 ## デプロイ方法
+
+2020/05/06より不要な操作
+
+コンテナ上での操作になる。
 
 ```bash
 # コンテナの起動
