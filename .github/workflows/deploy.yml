@@ -20,13 +20,18 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install Dependencies
-        run: npm install
-      - name: Audit
-        run: npm audit fix
-      - name: Run test
+        run: npm ci
+      - name: Run test with coverage
         run: npm test -- --coverage
-      - name: upload coverage
+      - name: Upload coverage
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-    # - name: deploy
+      - name: Predeploy
+        run: npm run predeploy
+      - name: Deploy
+        use: peaceiris/actions-gh-pages@v3
+        with: 
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: master
+          publish_dir: .
