@@ -16,6 +16,7 @@ $ docker/build_image.sh
 $ docker run --rm -v /Users/kichimiz/.ssh:/root/.ssh:ro -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/bash
 
 # サーバ起動方法
+# http://localhost:8000
 $ npm start
 ```
 
