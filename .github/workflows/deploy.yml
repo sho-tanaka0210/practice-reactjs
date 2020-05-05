@@ -31,6 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          echo $GITHUB_TOKEN
           git config --global user.email "37664176+Mizukichi0210@users.noreply.github.com"
           git config --global user.name "mizukichi0210"
           git remote set-url origin https://github.com/mizukichi0210/practice-reactjs.git
