@@ -22,24 +22,4 @@ $ npm start
 
 ## デプロイ方法
 
-2020/05/06より不要な操作
-
-コンテナ上での操作になる。
-
-```bash
-# コンテナの起動
-$ docker run --rm -v /Users/kichimiz/.ssh:/root/.ssh:ro -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/bash
-
-# sshキーの設定
-$ eval `ssh-agent`
-$ ssh-add /root/.ssh/id_rsa
-
-# デプロイ
-$ npm run deploy
-
-# デプロイ時にエラーが出た場合の対処法
-$ rm -rf node_modules/*
-$ npm install
-$ npm audit fix
-$ npm run deploy
-```
+masterブランチへpushをすればテスト実行後にデプロイされる
