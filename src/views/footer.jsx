@@ -1,14 +1,14 @@
-var React = require('react');
+import React from 'react';
 
 /**
- * フッターの設定
+ * フッター用のコンポーネント
+ * 
+ * @author mizukichi0210
  */
-var Footer = React.createClass({
-  render: function(){
-    return (
-      <h1>Footer</h1>
-    );
+class Footer extends React.Component {
+  render() {
+    return <h1>This is a footer.</h1>;
   }
-});
+}
 
-module.exports = Footer;
+export default Footer;

@@ -1,14 +1,14 @@
-var React = require('react');
+import React from 'react';
 
 /**
- * ヘッダーの設定
+ * ヘッダー用のコンポーネント
+ * 
+ * @author mizukichi0210
  */
-var Header = React.createClass({
-  render: function(){
-    return (
-      <h1>Header</h1>
-    );
+class Header extends React.Component {
+  render() {
+    return <h1>This is a header.</h1>;
   }
-});
+}
 
-module.exports = Header;
+export default Header;

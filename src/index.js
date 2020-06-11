@@ -2,10 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Footer from './views/footer'
+import Header from './views/header'
 import * as serviceWorker from './serviceWorker';
-
-var Header = require('views/header.jsx');
-var Footer = require('views/footer.jsx');
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +14,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
