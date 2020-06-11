@@ -26,3 +26,7 @@ $ npm start
 ## デプロイ方法
 
 masterブランチへpushをすればテスト実行後にデプロイされる
+
+## 詳細
+
+使用するCSS Framework: [Semantic UI React](https://react.semantic-ui.com/)
