@@ -20,6 +20,9 @@ $ docker run --rm -v /Users/kichimiz/.ssh:/root/.ssh:ro -p 8000:8000 -v $(pwd):/
 $ npm start
 ```
 
+### 注意事項
+コンテナ内で `npm install` でパッケージをインストールしたら**再度dockerイメージの構築を行うこと**
+
 ## デプロイ方法
 
 masterブランチへpushをすればテスト実行後にデプロイされる
