@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+var Header = require('views/header.jsx');
+var Footer = require('views/footer.jsx');
+
 ReactDOM.render(
   <React.StrictMode>
+    <Header />
     <App />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
