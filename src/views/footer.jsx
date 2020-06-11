@@ -7,7 +7,11 @@ import React from 'react';
  */
 class Footer extends React.Component {
   render() {
-    return <h1>This is a footer.</h1>;
+    return (
+      <footer>
+        <div>This is a footer.</div>
+      </footer>
+    );
   }
 }
 
