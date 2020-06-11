@@ -21,7 +21,8 @@ $ npm start
 ```
 
 ### 注意事項
-コンテナ内で `npm install` でパッケージをインストールしたら**再度dockerイメージの構築を行うこと**
+- コンテナ内で `npm install` でパッケージをインストールしたら**再度dockerイメージの構築を行うこと**
+- `yarn add xx` でパッケージの追加を行った場合、`npm install`をして`package-lock.json`を更新すること
 
 ## デプロイ方法
 
