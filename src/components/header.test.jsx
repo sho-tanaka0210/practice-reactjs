@@ -2,7 +2,7 @@ import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
 
-import Header from '../../src/components/header';
+import Header from './header';
 
 let container = null;
 beforeEach(() => {
