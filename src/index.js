@@ -6,12 +6,12 @@ import Footer from './components/footer'
 import Header from './components/header'
 import * as serviceWorker from './serviceWorker';
 
-// ReactDOM.render(
+ReactDOM.render(
   <React.StrictMode>
     <Header />
     <App />
     <Footer />
-  {/* </React.StrictMode>, */}
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
