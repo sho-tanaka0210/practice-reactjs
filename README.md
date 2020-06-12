@@ -3,8 +3,6 @@
 ![deploy](https://github.com/Mizukichi0210/practice-reactjs/workflows/deploy/badge.svg?branch=master&event=push)
 [![codecov](https://codecov.io/gh/Mizukichi0210/practice-reactjs/branch/master/graph/badge.svg)](https://codecov.io/gh/Mizukichi0210/practice-reactjs)
 
-masterブランチへpush後にGitHub pagesにデプロイされる
-
 ## 起動方法
 
 ```bash
@@ -23,6 +21,7 @@ $ npm start
 ### 注意事項
 - コンテナ内で `npm install` でパッケージをインストールしたら**再度dockerイメージの構築を行うこと**
 - `yarn add xx` でパッケージの追加を行った場合、`npm install`をして`package-lock.json`を更新すること
+- コンテナ上で`npm start`が起動しなくなった場合、`rm -r node_modules`を行うこと　
 
 ## デプロイ方法
 
