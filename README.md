@@ -23,6 +23,13 @@ $ npm start
 - `yarn add xx` でパッケージの追加を行った場合、`npm install`をして`package-lock.json`を更新すること
 - コンテナ上で`npm start`が起動しなくなった場合、`rm -r node_modules`を行うこと　
 
+## codecovについて
+[858a349c64861247c57147049fe50bb6ed811040](https://github.com/Mizukichi0210/practice-reactjs/commits/master)段階で無視するファイルは以下の通り
+- `./src/serviceWorker.js`
+- `./src/index.js`
+
+変更があった場合は更新するようにする
+
 ## デプロイ方法
 
 masterブランチへpushをすればテスト実行後にデプロイされる
