@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/practice-reactjs/static/css/main.ea850ca7.chunk.css",
-    "main.js": "/practice-reactjs/static/js/main.08ea0920.chunk.js",
-    "main.js.map": "/practice-reactjs/static/js/main.08ea0920.chunk.js.map",
+    "main.css": "/practice-reactjs/static/css/main.dc02c310.chunk.css",
+    "main.js": "/practice-reactjs/static/js/main.0670c2b0.chunk.js",
+    "main.js.map": "/practice-reactjs/static/js/main.0670c2b0.chunk.js.map",
     "runtime-main.js": "/practice-reactjs/static/js/runtime-main.5ca6bb17.js",
     "runtime-main.js.map": "/practice-reactjs/static/js/runtime-main.5ca6bb17.js.map",
-    "static/js/2.659f1bf5.chunk.js": "/practice-reactjs/static/js/2.659f1bf5.chunk.js",
-    "static/js/2.659f1bf5.chunk.js.map": "/practice-reactjs/static/js/2.659f1bf5.chunk.js.map",
+    "static/css/2.e2e6b9e0.chunk.css": "/practice-reactjs/static/css/2.e2e6b9e0.chunk.css",
+    "static/js/2.e88c63d4.chunk.js": "/practice-reactjs/static/js/2.e88c63d4.chunk.js",
+    "static/js/2.e88c63d4.chunk.js.map": "/practice-reactjs/static/js/2.e88c63d4.chunk.js.map",
     "index.html": "/practice-reactjs/index.html",
-    "precache-manifest.b93aed65a575e2f356cf885bd107ba4f.js": "/practice-reactjs/precache-manifest.b93aed65a575e2f356cf885bd107ba4f.js",
+    "precache-manifest.775c62055f02e1323228cf67b359f130.js": "/practice-reactjs/precache-manifest.775c62055f02e1323228cf67b359f130.js",
     "service-worker.js": "/practice-reactjs/service-worker.js",
-    "static/css/main.ea850ca7.chunk.css.map": "/practice-reactjs/static/css/main.ea850ca7.chunk.css.map",
-    "static/js/2.659f1bf5.chunk.js.LICENSE.txt": "/practice-reactjs/static/js/2.659f1bf5.chunk.js.LICENSE.txt",
+    "static/css/2.e2e6b9e0.chunk.css.map": "/practice-reactjs/static/css/2.e2e6b9e0.chunk.css.map",
+    "static/css/main.dc02c310.chunk.css.map": "/practice-reactjs/static/css/main.dc02c310.chunk.css.map",
+    "static/js/2.e88c63d4.chunk.js.LICENSE.txt": "/practice-reactjs/static/js/2.e88c63d4.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/practice-reactjs/static/media/outline-icons.ef60a4f6.woff",
     "static/media/logo.svg": "/practice-reactjs/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5ca6bb17.js",
-    "static/js/2.659f1bf5.chunk.js",
-    "static/css/main.ea850ca7.chunk.css",
-    "static/js/main.08ea0920.chunk.js"
+    "static/css/2.e2e6b9e0.chunk.css",
+    "static/js/2.e88c63d4.chunk.js",
+    "static/css/main.dc02c310.chunk.css",
+    "static/js/main.0670c2b0.chunk.js"
   ]
 }
