@@ -21,3 +21,5 @@ comment:
 
 ignore:
   - "./src/serviceWorker.js"
+  # 現状index.jsに全てを持ってきているのでカバレッジに含めない考え
+  - "./src/index.js" 
