@@ -7,7 +7,7 @@ import Header from './header';
 let container = null;
 beforeEach(() => {
   // setup a DOM element as a render target
-  container = document.createElement('header');
+  container = document.createElement('div');
   // container *must* be attached to document so events work correctly.
   document.body.appendChild(container);
 });
@@ -20,13 +20,27 @@ afterEach(() => {
 });
 
 /**
- * フッターの表示テスト
+ * メインヘッダーの表示テスト
  */
-it('View header', () => {
+it('View main header', () => {
   act(() => {
     render(<Header />, container);
   });
 
-  const footer = container.querySelector('div');
-  expect(footer.textContent).toBe('This is a header.');
+  const className = '.ui.header';
+  const header = container.querySelector(className);
+  expect(header.tagName).toBe('H2');
+});
+
+/**
+ * サブヘッダーの表示テスト
+ */
+it('View sub header', () => {
+  act(()  => {
+    render(<Header />, container);
+  });
+
+  const className = '.sub.header';
+  const header = container.querySelector(className);
+  expect(header.tagName).toBe('DIV');
 });

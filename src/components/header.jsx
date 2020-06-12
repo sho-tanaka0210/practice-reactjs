@@ -1,18 +1,21 @@
 import React from 'react';
+import { Header } from 'semantic-ui-react'
+import './css/header.css'
 
 /**
  * ヘッダー用のコンポーネント
- * 
+ *
  * @author mizukichi0210
  */
-class Header extends React.Component {
+class PageHeader extends React.Component {
   render() {
     return (
-      <header>
-        <div>This is a header.</div>
-      </header>
+      <Header as='h2'
+        content='メインヘッダー'
+        subheader='サブヘッダー'>
+      </Header>
     )
   }
 }
 
-export default Header;
+export default PageHeader;
