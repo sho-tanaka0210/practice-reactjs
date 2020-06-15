@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/practice-reactjs/static/css/main.237a5be2.chunk.css",
-    "main.js": "/practice-reactjs/static/js/main.48efd2ba.chunk.js",
-    "main.js.map": "/practice-reactjs/static/js/main.48efd2ba.chunk.js.map",
+    "main.js": "/practice-reactjs/static/js/main.ee572ade.chunk.js",
+    "main.js.map": "/practice-reactjs/static/js/main.ee572ade.chunk.js.map",
     "runtime-main.js": "/practice-reactjs/static/js/runtime-main.5ca6bb17.js",
     "runtime-main.js.map": "/practice-reactjs/static/js/runtime-main.5ca6bb17.js.map",
     "static/js/2.01344639.chunk.js": "/practice-reactjs/static/js/2.01344639.chunk.js",
     "static/js/2.01344639.chunk.js.map": "/practice-reactjs/static/js/2.01344639.chunk.js.map",
     "index.html": "/practice-reactjs/index.html",
-    "precache-manifest.0c4a04dca6fca1b4a8588bd9383dc725.js": "/practice-reactjs/precache-manifest.0c4a04dca6fca1b4a8588bd9383dc725.js",
+    "precache-manifest.95f24deb721b3b31da9b764812c5fe08.js": "/practice-reactjs/precache-manifest.95f24deb721b3b31da9b764812c5fe08.js",
     "service-worker.js": "/practice-reactjs/service-worker.js",
     "static/css/main.237a5be2.chunk.css.map": "/practice-reactjs/static/css/main.237a5be2.chunk.css.map",
     "static/js/2.01344639.chunk.js.LICENSE.txt": "/practice-reactjs/static/js/2.01344639.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.5ca6bb17.js",
     "static/js/2.01344639.chunk.js",
     "static/css/main.237a5be2.chunk.css",
-    "static/js/main.48efd2ba.chunk.js"
+    "static/js/main.ee572ade.chunk.js"
   ]
 }
