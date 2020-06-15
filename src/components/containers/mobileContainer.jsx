@@ -69,7 +69,7 @@ class MobileContainer extends Component {
                 </Menu.Item>
               </Menu>
             </Container>
-            <HomepageHeading></HomepageHeading>
+            <HomepageHeading mobile />
           </Segment>
 
           {children}

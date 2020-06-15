@@ -58,7 +58,7 @@ class DesktopContainer extends Component {
                 </Menu.Item>
               </Container>
             </Menu>
-            <HomepageHeading></HomepageHeading>
+            <HomepageHeading />
           </Segment>
         </Visibility>
         {children}

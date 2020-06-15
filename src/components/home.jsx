@@ -13,17 +13,15 @@ import {
   Segment,
 } from 'semantic-ui-react'
 
-const ResponsiveContainer = ({ children, mobile, homepageHeading }) => (
+const ResponsiveContainer = ({ children }) => (
   <div>
-    <DesktopContainer homepageHeading={homepageHeading} mobile={mobile}>{children}</DesktopContainer>
-    <MobileContainer>{children}{mobile}{homepageHeading}</MobileContainer>
+    <DesktopContainer>{children}</DesktopContainer>
+    <MobileContainer>{children}</MobileContainer>
   </div>
 )
 
 ResponsiveContainer.propTypes = {
   children: PropTypes.node,
-  homepageHeading: PropTypes.node,
-  mobile: PropTypes.bool,
 }
 
 const HomepageLayout = () => (

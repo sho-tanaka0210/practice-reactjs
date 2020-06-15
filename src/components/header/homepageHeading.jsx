@@ -9,7 +9,7 @@ import {
 
 class HomepageHeading extends Component {
   
-  render (mobile) {
+  render (mobile = this.props.mobile) {
     return <Container text>
     <Header
       as='h1'
