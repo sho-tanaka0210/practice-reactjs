@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Footer from './components/footer'
-import Header from './components/header'
+import HomePage from './components/home';
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-react'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <App />
-    <Footer />
+    <HomePage></HomePage>
   </React.StrictMode>,
   document.getElementById('root')
 );
