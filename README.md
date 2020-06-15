@@ -37,3 +37,6 @@ masterブランチへpushをすればテスト実行後にデプロイされる
 ## 詳細
 
 使用するCSS Framework: [Semantic UI React](https://react.semantic-ui.com/)
+
+## 参考
+レイアウト: [Semantic UI React - Layout examples - Pages - Homepage](https://react.semantic-ui.com/layouts/homepage)
