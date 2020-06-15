@@ -11,7 +11,7 @@
 $ docker/build_image.sh
 
 # コンテナ起動方法
-$ docker run --rm -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/bash
+$ docker run --rm -p 8000:8000 -v $(pwd):/practice-reactjs -it practice-reactjs /bin/sh
 
 # サーバ起動方法
 # http://localhost:8000
