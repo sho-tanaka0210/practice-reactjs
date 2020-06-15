@@ -5,7 +5,7 @@ import App from './App';
 import Footer from './components/footer'
 import Header from './components/header'
 import * as serviceWorker from './serviceWorker';
-import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-react'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +15,11 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const styleLink = document.createElement("link");
+styleLink.rel = "stylesheet";
+styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
+document.head.appendChild(styleLink);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
