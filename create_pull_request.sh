@@ -6,7 +6,7 @@ set_git_setting() {
   git config --global user.name ${USER_NAME}
   git config --global user.email ${EMAIL}
   git remote set-url origin ${URL}
-  git checkout -b weekly_npm_update_`date +%Y%m%d`
+  git checkout -b npm_update_`date +%Y%m%d`
 }
 
 create_pull_request() {
