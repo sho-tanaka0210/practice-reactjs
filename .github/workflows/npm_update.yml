@@ -1,4 +1,4 @@
-name: Weekly Update npm
+name: Update npm
 
 on: 
   schedule:
@@ -16,3 +16,11 @@ jobs:
           node-version: '14.x'
       - name: Run npm update
         run: npm update --dev
+      - name: Create PR
+        run: sudo sh create_pull_request.sh ${{ secrets.API_TOKEN }}
+        env:
+          USER_NAME: mizukichi0210
+          EMAIL: 37664176+Mizukichi0210@users.noreply.github.com
+          ORIGIN_URL: https://github.com/Mizukichi0210/practice-reactjs.git
+          REPO_NAME: practice-reactjs
+
