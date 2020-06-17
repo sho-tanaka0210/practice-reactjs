@@ -1,4 +1,4 @@
-name: Update npm
+name: Upgrade yarn
 
 on: 
   schedule:
@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: Run npm update
-        run: npm update --dev
+        run: yarn upgrade
       - name: Create PR
         run: sudo sh create_pull_request.sh ${{ secrets.API_TOKEN }}
         env:
