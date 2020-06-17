@@ -1,4 +1,4 @@
-name: Upgrade yarn
+name: Update npm
 
 on: 
   schedule:
@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: Run npm update
-        run: yarn upgrade
+        run: rm -f ./package-lock.json && npm install
       - name: Create PR
         run: sudo sh create_pull_request.sh ${{ secrets.API_TOKEN }}
         env:
