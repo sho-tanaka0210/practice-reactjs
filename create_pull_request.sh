@@ -1,12 +1,14 @@
 #!/bin/sh
 set -eu
-echo 'start'
+
+GITHUB_API_TOKEN=$0
+BRANCH_NAME=npm_update_`date +%Y%m%d`
 
 set_git_setting() {
   git config --global user.name ${USER_NAME}
   git config --global user.email ${EMAIL}
-  git remote set-url origin ${URL}
-  git checkout -b npm_update_`date +%Y%m%d`
+  git remote set-url origin ${ORIGIN_URL}
+  git checkout -b $BRANCH_NAME
 }
 
 create_pull_request() {
@@ -29,9 +31,10 @@ create_pull_request() {
   git push origin HEAD
 
   # PR作成処理
-  # curl -H "Authorization: token $token" ¥
-  #    "https://api.github.com/repos/USER/REPO/pulls" ¥
-  #    -d "{"title": "TITLE", "head": "USER:BRANCH", "base": "master"}"
+  curl -H "Authorization: token $GITHUB_API_TOKEN" \
+          "https://api.github.com/repos/${USER_NAME}/${REPO_NAME}/pulls" \
+      -d "{"title": "週ごとのnpm update", "head": "${USER_NAME}:$BRANCH_NAME", \
+          "base": "master", "body": "npm updateを行った結果のPR。 localhost上で動作確認をし、問題がなければマージすること"}"
 }
 
 create_pull_request 'package.json' 'package-lock.json'
