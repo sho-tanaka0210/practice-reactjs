@@ -19,7 +19,7 @@ class DesktopContainer extends Component {
   showFixedMenu = () => this.setState({ fixed: true })
   getWidth = () => {
     const isSSR = typeof window === 'undefined'
-  
+
     return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
   }
 
