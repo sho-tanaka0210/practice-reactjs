@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import {
   Button,
   Container,
+  Form,
   Icon,
   Menu,
   Responsive,
@@ -21,7 +22,7 @@ class MobileContainer extends Component {
 
   getWidth = () => {
     const isSSR = typeof window === 'undefined'
-  
+
     return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
   }
 
@@ -63,8 +64,13 @@ class MobileContainer extends Component {
                   <Icon name='sidebar' />
                 </Menu.Item>
                 <Menu.Item position='right'>
+                  <Form>
+                    <Form.Field inverted style={{ marginLeft: '0.5em' }}>
+                      <input placeholder='リポジトリ検索'></input>
+                    </Form.Field>
+                  </Form>
                   <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    Search
                   </Button>
                 </Menu.Item>
               </Menu>
