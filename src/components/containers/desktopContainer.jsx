@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import {
   Button,
   Container,
+  Form,
   Menu,
   Responsive,
   Segment,
@@ -52,8 +53,13 @@ class DesktopContainer extends Component {
                 </Menu.Item>
                 <Menu.Item as='a'>Repository list</Menu.Item>
                 <Menu.Item position='right'>
+                  <Form>
+                    <Form.Field>
+                      <input placeholder='リポジトリ検索'></input>
+                    </Form.Field>
+                  </Form>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    Search
                   </Button>
                 </Menu.Item>
               </Container>
