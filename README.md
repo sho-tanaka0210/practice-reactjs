@@ -20,7 +20,7 @@ $ npm start
 
 ### 注意事項
 - コンテナ内で `npm install` でパッケージをインストールしたら**再度dockerイメージの構築を行うこと**
-- `yarn add xx` でパッケージの追加を行った場合、`npm install`をして`package-lock.json`を更新すること
+- 手動でパッケージ更新を行う際は `rm -f package-lock.json` して `npm install` すること
 - コンテナ上で`npm start`が起動しなくなった場合、`rm -r node_modules`を行うこと　
 
 ## codecovについて
