@@ -19,6 +19,9 @@ afterEach(() => {
   container = null;
 });
 
+/**
+ * ホームページのヘッダー表示確認
+ */
 it('View homepage header', () => {
   act(() => {
     render(<HomepageHeading />, container);
@@ -28,6 +31,9 @@ it('View homepage header', () => {
   expect(homepageheading.textContent).toBe('リポジトリ概要紹介');
 });
 
+/**
+ * ホームページのヘッダー表示確認(mobile)
+ */
 it('View homepage header on mobile', () => {
   act(() => {
     render(<HomepageHeading mobile></HomepageHeading>, container);
