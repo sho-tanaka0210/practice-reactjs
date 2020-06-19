@@ -19,22 +19,20 @@ afterEach(() => {
   container = null;
 });
 
-const sel = id => `[data-tesidt="${id}"]`
-
 it('View homepage header', () => {
   act(() => {
     render(<HomepageHeading />, container);
-
-    const homepageheading = sel('header')
-    expect(homepageheading.textContent).toBe('リポジトリ概要紹介');
   });
+
+  const homepageheading = container.querySelector('.ui.inverted.header');
+  expect(homepageheading.textContent).toBe('リポジトリ概要紹介');
 });
 
 it('View homepage header on mobile', () => {
   act(() => {
-    render(<HomepageHeading mobile />, container);
+    render(<HomepageHeading mobile></HomepageHeading>, container);
   });
 
-  const homepageheading = sel('header')
+  const homepageheading = container.querySelector('.ui.inverted.header');
   expect(homepageheading.textContent).toBe('リポジトリ概要紹介');
 });

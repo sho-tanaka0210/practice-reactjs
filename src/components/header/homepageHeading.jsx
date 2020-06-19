@@ -19,7 +19,6 @@ class HomepageHeading extends Component {
         marginTop: mobile ? '0em' : '1em',
         marginBottom: '1em',
       }}
-      data-testid='header'
     />
   </Container>
   }
