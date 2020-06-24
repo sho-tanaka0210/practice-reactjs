@@ -6,10 +6,6 @@ USER_NAME=$2
 EMAIL=$3
 ORIGIN_URL=$4
 REPO_NAME=$5
-echo $USER_NAME
-echo $EMAIL
-echo $ORIGIN_URL
-echo $REPO_NAME
 
 BRANCH_NAME=npm_update_`date +%Y%m%d`
 
