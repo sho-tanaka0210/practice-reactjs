@@ -33,7 +33,7 @@ create_pull_request() {
   
   set_git_setting
   git commit -m '`date +%Y%m%d` - Run npm update'
-  git push origin $BRANCH_NAME
+  # git push origin $BRANCH_NAME
 
   # PR作成処理
   curl -H "Authorization: token $GITHUB_API_TOKEN" \
