@@ -12,7 +12,7 @@ BRANCH_NAME=npm_update_`date +%Y%m%d`
 set_git_setting() {
   git config --global user.name $USER_NAME
   git config --global user.email $EMAIL
-  git remote add origin $ORIGIN_URL
+  # git remote add origin $ORIGIN_URL
   git checkout -b $BRANCH_NAME
 }
 
