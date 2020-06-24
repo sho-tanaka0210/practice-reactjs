@@ -5,9 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'public/**'
       - 'src/**'
-      - '**.json'
 
 jobs:
   tests:
