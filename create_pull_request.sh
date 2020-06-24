@@ -12,7 +12,7 @@ BRANCH_NAME=npm_update_`date +%Y%m%d`
 set_git_setting() {
   git config --global user.name $USER_NAME
   git config --global user.email $EMAIL
-  # git remote set-url origin $ORIGIN_URL
+  git remote set-url origin $ORIGIN_URL
   git checkout -b $BRANCH_NAME
 }
 
@@ -33,7 +33,7 @@ create_pull_request() {
   
   set_git_setting
   git commit -m '`date +%Y%m%d` - Run npm update'
-  git push origin HEAD
+  git push origin $BRANCH_NAME
 
   # PR作成処理
   curl -H "Authorization: token $GITHUB_API_TOKEN" \
