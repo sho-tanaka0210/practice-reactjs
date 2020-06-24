@@ -6,13 +6,17 @@ USER_NAME=$1
 EMAIL=$2
 ORIGIN_URL=$3
 REPO_NAME=$4
+echo $USER_NAME
+echo $EMAIL
+echo $ORIGIN_URL
+echo $REPO_NAME
 
 BRANCH_NAME=npm_update_`date +%Y%m%d`
 
 set_git_setting() {
   git config --global user.name $USER_NAME
   git config --global user.email $EMAIL
-  # git remote add origin $ORIGIN_URL
+  git remote set-url origin $ORIGIN_URL
   git checkout -b $BRANCH_NAME
 }
 
