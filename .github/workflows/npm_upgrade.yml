@@ -17,10 +17,10 @@ jobs:
       - name: Run npm update
         run: rm -f ./package-lock.json && npm install
       - name: Create PR
-        run: sudo sh create_pull_request.sh ${{ secrets.API_TOKEN }}
         env:
           USER_NAME: mizukichi0210
           EMAIL: 37664176+Mizukichi0210@users.noreply.github.com
           ORIGIN_URL: https://github.com/Mizukichi0210/practice-reactjs.git
           REPO_NAME: practice-reactjs
+        run: sudo sh create_pull_request.sh ${{ secrets.API_TOKEN }}
 
