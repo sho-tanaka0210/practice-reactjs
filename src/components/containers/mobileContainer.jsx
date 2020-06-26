@@ -48,7 +48,6 @@ class MobileContainer extends Component {
             Home
           </Menu.Item>
           <Menu.Item as='a'>Repository list</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
