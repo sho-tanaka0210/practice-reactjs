@@ -2,7 +2,7 @@ name: Update npm
 
 on: 
   schedule:
-    - cron : '40 17 * * 5'
+    - cron : '52 17 * * 5'
 
 jobs:
   npm-update:
