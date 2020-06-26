@@ -7,7 +7,8 @@ EMAIL=$3
 ORIGIN_URL=$4
 REPO_NAME=$5
 
-BRANCH_NAME=npm_update_`date +%Y%m%d`
+DATE=`date +%Y%m%d`
+BRANCH_NAME=npm_update_$DATE
 
 set_git_setting() {
   git config --global user.name $USER_NAME
@@ -32,13 +33,14 @@ create_pull_request() {
   $is_add || return
   
   set_git_setting
-  git commit -m '`date +%Y%m%d` - Run npm update'
-  # git push origin $BRANCH_NAME
+  git commit -m "$DATE - Run npm update"
+  git push origin $BRANCH_NAME
 
   # PR作成処理
-  curl -H "Authorization: token $GITHUB_API_TOKEN" \
-          "https://api.github.com/repos/$USER_NAME/$REPO_NAME/pulls" \
-      -d "{"title": "週ごとのnpm update", "head": "$USER_NAME:$BRANCH_NAME", \
+  curl -X POST "https://api.github.com/repos/$USER_NAME/$REPO_NAME/pulls" \
+      -H "Authorization: token $GITHUB_API_TOKEN" \
+      -H 'Content-Type:application/json;charset=utf-8' \
+      -d "{"title": "npm update", "head": "$USER_NAME:$BRANCH_NAME", \
           "base": "master", "body": "npm updateを行った結果のPR。 localhost上で動作確認をし、問題がなければマージすること"}"
 }
 
