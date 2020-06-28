@@ -1,4 +1,4 @@
-name: Update npm
+name: Update packages
 
 on: 
   schedule:
