@@ -40,10 +40,10 @@ create_pull_request() {
   git push origin $BRANCH_NAME
 
   # PR作成処理
-  curl -X POST 'https://api.github.com/repos/$USER_NAME/$REPO_NAME/pulls' \
+  curl -X POST "https://api.github.com/repos/$USER_NAME/$REPO_NAME/pulls" \
       -H "Authorization: token $GITHUB_API_TOKEN" \
       -H 'Content-Type:application/json;charset=utf-8' \
-      -d '{"title": "npm update", "head": "$USER_NAME:$BRANCH_NAME", "base": "master", "body": "npm updateを行った結果のPR。 localhost上で動作確認をし、問題がなければマージすること"}'
+      -d "{\"title\": \"npm update\", \"head\": \"$USER_NAME:$BRANCH_NAME\", \"base\": \"master\", \"body\": \"npm updateを行った結果のPR。 localhost上で動作確認をし、問題がなければマージすること\"}"
 }
 
 create_pull_request 'package.json' 'package-lock.json'
