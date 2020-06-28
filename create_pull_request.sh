@@ -8,7 +8,6 @@ EMAIL=$4
 REPO_NAME=$5
 
 ORIGIN_URL="https://$USER_NAME:$PASSWORD@github.com/$USER_NAME/$REPO_NAME.git"
-echo $ORIGIN_URL
 
 DATE=`date +%Y%m%d`
 BRANCH_NAME=npm_update_$DATE
