@@ -8,4 +8,6 @@ COPY package.json .
 
 RUN apt-get upgrade && \
   apt-get update && \
-  npm install
+  npm install && \
+  cp -r node_modules/ /root/ && \
+  cp package-lock.json /root/
