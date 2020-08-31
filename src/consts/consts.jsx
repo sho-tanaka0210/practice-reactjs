@@ -1,0 +1,10 @@
+const Consts = {
+  DISCORD_APP_NAME: 'DiscordのVC入退室通知ツール',
+  DISCORD_APP_OVERVIEW: 'このBOTを導入したDiscordサーバのボイスチャットへIN or OUTした際のユーザ名を指定のチャンネルへ投稿します。',
+  DISCORD_APP_MOTION_CAPUTURE: 'https://camo.githubusercontent.com/4677d97b0e5fa3dbd57f4d6547890ba11090a6ac/68747470733a2f2f7261772e6769746875622e636f6d2f77696b692f6d697a756b69636869303231302f4d616e6167652d456e74657265642d616e642d4c6566742d6f6e2d446973636f72642f6578616d706c655f6769662e676966',
+  DISCORD_APP_OPERATION_SETTING_CAPTURE: 'https://user-images.githubusercontent.com/37664176/83553813-c0d99480-a546-11ea-92d6-30500db4eddd.png',
+
+  BUTTON_READ_MORE: 'Read more...',
+}
+
+export default Consts;
