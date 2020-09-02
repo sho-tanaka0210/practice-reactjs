@@ -29,6 +29,10 @@ const HomepageLayout = () => (
         <Name title={Consts.DISCORD_APP_NAME}></Name>
         <Overview overview={Consts.DISCORD_APP_OVERVIEW}></Overview>
         <ViewDetailButton></ViewDetailButton>
+
+        <Name title={Consts.CHECK_RESPONSE_NAME}></Name>
+        <Overview overview={Consts.CHECK_RESPONSE_OVERVIEW}></Overview>
+        <ViewDetailButton></ViewDetailButton>
       </Container>
     </Segment>
   </ResponsiveContainer>
