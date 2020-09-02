@@ -1,45 +1,32 @@
 import Consts from '../../consts/consts'
 import React, { Component } from 'react'
 import {
-  Responsive,
   Button
 } from 'semantic-ui-react'
 
 class ViewDetailButton extends Component {
 
-  constructor(props){
+  constructor() {
     super();
     this.state = {isViewDetails: false};
   }
-  state = {}
 
-  hideFixedMenu = () => this.setState({ fixed: false })
-  showFixedMenu = () => this.setState({ fixed: true })
-  getWidth = () => {
-    const isSSR = typeof window === 'undefined'
-
-    return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
+  viewDetail = (detail) => {
+    this.setState({ isViewDetails: !this.state.isViewDetails});
   }
-  
+
   render() {
-    const {isViewDetails} = this.state.isViewDetails;
-    let view;
+    let button;
 
-    if(isViewDetails){
-
+    if(this.state.isViewDetails){
+      button = <Button onClick={() => this.viewDetail()}>{Consts.BUTTON_CLOSE}</Button>;
     } else {
-      view = Consts.BUTTON_READ_MORE;
+      button = <Button onClick={() => this.viewDetail()}>{Consts.BUTTON_READ_MORE}</Button>;
     }
 
     return(
-      <Button onClick={() => this.viewDetail()}>
-        {view}
-      </Button>
+      button
     );
-  }
-  
-  viewDetail = (detail) => {
-    console.log('ok')
   }
 }
 
