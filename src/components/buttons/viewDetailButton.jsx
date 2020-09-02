@@ -22,7 +22,6 @@ class ViewDetailButton extends Component {
   }
   
   render() {
-    const { detail } = this.props;
     const {isViewDetails} = this.state.isViewDetails;
     let view;
 
