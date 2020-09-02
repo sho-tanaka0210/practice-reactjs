@@ -26,8 +26,4 @@ it('View header list', () => {
 
   const headerArray = Array.from(container.querySelectorAll('.item'));
   expect(headerArray[0].textContent).toBe('Home');
-  expect(headerArray[1].textContent).toBe('Repository list');
-
-  expect(headerArray[2].querySelector('input').placeholder).toBe('リポジトリ検索');
-  expect(headerArray[2].querySelector('.ui.inverted.button').textContent).toBe('Search');
 });
