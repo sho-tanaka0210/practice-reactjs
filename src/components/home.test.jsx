@@ -28,6 +28,7 @@ it('アプリ名が表示されているかのテスト', () => {
   const headerArray = Array.from(container.querySelectorAll('h3.ui.header'));
   expect(headerArray[0].textContent).toBe(Consts.DISCORD_APP_NAME);
   expect(headerArray[1].textContent).toBe(Consts.CHECK_RESPONSE_NAME);
+  expect(headerArray[2].textContent).toBe(Consts.DOCKER_IMAGE_NAME);
 });
 
 it('概要が表示されているかのテスト', () => {
@@ -35,36 +36,8 @@ it('概要が表示されているかのテスト', () => {
     render(<Home/>, container);
   });
 
-  const pArray = Array.from(container.querySelectorAll('.ui.text.container>p'));
+  const pArray = Array.from(container.querySelectorAll('.ui.container>div>p'));
   expect(pArray[0].textContent).toBe(Consts.DISCORD_APP_OVERVIEW);
   expect(pArray[1].textContent).toBe(Consts.CHECK_RESPONSE_OVERVIEW);
-});
-
-it('ボタン押下時にボタンの表示が変更されるかのテスト', () => {
-  const onChange = jest.fn();
-  act(() => {
-    render(<Home/>, container);
-  });
-
-  const buttonArray = Array.from(container.querySelectorAll('.ui.text.container>button'));
-  expect(buttonArray[0].innerHTML).toBe(Consts.BUTTON_READ_MORE);
-  expect(buttonArray[1].innerHTML).toBe(Consts.BUTTON_READ_MORE);
-
-  act(() => {
-    buttonArray[0].dispatchEvent(new MouseEvent("click", { bubbles: true }));
-    buttonArray[1].dispatchEvent(new MouseEvent("click", { bubbles: true }));
-  });
-
-  expect(onChange).toHaveBeenCalledTimes(0);
-  expect(buttonArray[0].innerHTML).toBe(Consts.BUTTON_CLOSE);
-  expect(buttonArray[1].innerHTML).toBe(Consts.BUTTON_CLOSE);
-
-  act(() => {
-    buttonArray[0].dispatchEvent(new MouseEvent("click", { bubbles: true }));
-    buttonArray[1].dispatchEvent(new MouseEvent("click", { bubbles: true }));
-  });
-
-  expect(buttonArray[0].innerHTML).toBe(Consts.BUTTON_READ_MORE);
-  expect(buttonArray[1].innerHTML).toBe(Consts.BUTTON_READ_MORE);
-
+  expect(pArray[2].textContent).toBe(Consts.DOCKER_IMAGE_OVERVIEW);
 });
