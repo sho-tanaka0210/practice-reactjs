@@ -11,7 +11,7 @@ class ViewDetailButton extends Component {
     this.state = {isViewDetails: false};
   }
 
-  viewDetail = (detail) => {
+  viewDetail = () => {
     this.setState({ isViewDetails: !this.state.isViewDetails});
   }
 
