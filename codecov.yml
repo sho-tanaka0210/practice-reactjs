@@ -23,3 +23,5 @@ ignore:
   - "./src/serviceWorker.js"
   # 現状index.jsに全てを持ってきているのでカバレッジに含めない考え
   - "./src/index.js" 
+  # 使用していない部品のためカバレッジからは排除
+  - "./src/components/buttons"
