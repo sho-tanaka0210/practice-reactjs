@@ -1,15 +1,16 @@
-import Consts from '../consts/consts'
-import DesktopContainer from './containers/desktopContainer'
-import MobileContainer from './containers/mobileContainer'
-import Name from './explanations/name'
-import Overview from './explanations/overview'
-import PropTypes from 'prop-types'
-import React from 'react'
-import ViewDetailButton from './buttons/viewDetailButton'
+import AppDetail from './explanations/appDetail';
+import Consts from '../consts/consts';
+import DesktopContainer from './containers/desktopContainer';
+import MobileContainer from './containers/mobileContainer';
+import Name from './explanations/name';
+import Overview from './explanations/overview';
+import PropTypes from 'prop-types';
+import React from 'react';
+import ViewDetailButton from './buttons/viewDetailButton';
 import {
   Container,
   Segment,
-} from 'semantic-ui-react'
+} from 'semantic-ui-react';
 
 const ResponsiveContainer = ({ children }) => (
   <div>
@@ -28,11 +29,11 @@ const HomepageLayout = () => (
       <Container text>
         <Name title={Consts.DISCORD_APP_NAME}></Name>
         <Overview overview={Consts.DISCORD_APP_OVERVIEW}></Overview>
-        <ViewDetailButton></ViewDetailButton>
+        <AppDetail></AppDetail>
 
         <Name title={Consts.CHECK_RESPONSE_NAME}></Name>
         <Overview overview={Consts.CHECK_RESPONSE_OVERVIEW}></Overview>
-        <ViewDetailButton></ViewDetailButton>
+        <AppDetail></AppDetail>
       </Container>
     </Segment>
   </ResponsiveContainer>
