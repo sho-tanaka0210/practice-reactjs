@@ -18,7 +18,7 @@ jobs:
         run: rm -f ./package-lock.json && npm install
       - name: Create PR
         env:
-          USER_NAME: mizukichi0210
+          USER_NAME: sho-tanaka0210
           EMAIL: 37664176+Mizukichi0210@users.noreply.github.com
           REPO_NAME: practice-reactjs
         run: sudo sh create_pull_request.sh ${{ secrets.API_TOKEN }} ${{ secrets.PASSWORD }} $USER_NAME $EMAIL $REPO_NAME
