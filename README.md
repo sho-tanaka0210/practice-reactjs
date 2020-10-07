@@ -1,8 +1,8 @@
 # React.js練習用
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![deploy](https://github.com/Mizukichi0210/practice-reactjs/workflows/deploy/badge.svg?branch=master&event=push)
-[![codecov](https://codecov.io/gh/Mizukichi0210/practice-reactjs/branch/master/graph/badge.svg)](https://codecov.io/gh/Mizukichi0210/practice-reactjs)
+![deploy](https://github.com/sho-tanaka0210/practice-reactjs/workflows/deploy/badge.svg?branch=master&event=push)
+[![codecov](https://codecov.io/gh/sho-tanaka0210/practice-reactjs/branch/master/graph/badge.svg)](https://codecov.io/gh/Mizukichi0210/practice-reactjs)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/sho-tanaka0210/practice-reactjs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sho-tanaka0210/practice-reactjs/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/sho-tanaka0210/practice-reactjs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sho-tanaka0210/practice-reactjs/context:javascript)
 
